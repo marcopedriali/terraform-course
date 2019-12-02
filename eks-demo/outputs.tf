@@ -32,7 +32,7 @@ KUBECONFIG
 }
 
 output "kubeconfig" {
-  value = local.kubeconfig
+  value = "${local.kubeconfig}"
 }
 
 # Join configuration
@@ -58,6 +58,6 @@ CONFIGMAPAWSAUTH
 }
 
 output "config-map-aws-auth" {
-value = local.config-map-aws-auth
+value = "${local.config-map-aws-auth}"
 }
 
